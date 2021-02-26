@@ -4,7 +4,7 @@
   "description": "Convert OpenAPI 3.0 document into a tree of request/response JSON Schemas",
   "main": "lib/openapi2schema.js",
   "scripts": {
-    "test": "./node_modules/.bin/tape test/**/*.test.js | ./node_modules/.bin/tap-spec"
+    "test": "./node_modules/.bin/tape test/**/*.test.js | \"./node_modules/.bin/tap-spec\""
   },
   "bin": {
     "openapi2schema": "./index.js"
@@ -13,12 +13,12 @@
   "author": "Mika Kunnas",
   "license": "MIT",
   "dependencies": {
+    "@openapi-contrib/openapi-schema-to-json-schema": "^3.0.4",
     "commander": "^2.11.0",
-    "json-schema-merge-allof": "^0.6.0",
-    "json-schema-ref-parser": "^4.0.3",
-    "json-schema-deref-sync": "^0.4.0",
     "js-yaml": "^3.10.0",
-    "openapi-schema-to-json-schema": "^2.1.0"
+    "json-schema-deref-sync": "^0.4.0",
+    "json-schema-merge-allof": "^0.6.0",
+    "json-schema-ref-parser": "^4.0.3"
   },
   "devDependencies": {
     "tap-spec": "^4.1.1",
