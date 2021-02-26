@@ -13,12 +13,13 @@
   "author": "Mika Kunnas",
   "license": "MIT",
   "dependencies": {
-    "@openapi-contrib/openapi-schema-to-json-schema": "^3.0.4",
+    
     "commander": "^2.11.0",
     "js-yaml": "^3.10.0",
     "json-schema-deref-sync": "^0.4.0",
     "json-schema-merge-allof": "^0.6.0",
-    "json-schema-ref-parser": "^4.0.3"
+    "json-schema-ref-parser": "^4.0.3",
+    "@openapi-contrib/openapi-schema-to-json-schema": "^3.0.4"
   },
   "devDependencies": {
     "tap-spec": "^4.1.1",

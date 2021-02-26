@@ -1,0 +1,44 @@
+openapi: openapi 3.0.0
+
+info:
+  version: 1.0.0
+  title: JSONAPI Spec 
+
+paths:
+  '/clean':
+    get:
+      responses:
+        '200':
+          description: OK
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: '#/components/schemas/Clean'
+  '/clean2':
+    get:
+      responses:
+        '200':
+          description: OK
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: '#/components/schemas/Clean'
+    post:
+      requestBody:
+        required: true
+        content:
+          application/vnd.api+json:
+            schema:
+              $ref: '#/components/schemas/Clean'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/vnd.api+json:
+              schema:
+                $ref: '#/components/schemas/Clean'
+
+components:
+  schemas:
+    Clean:
+      type: string
