@@ -4,7 +4,7 @@
   "description": "Convert OpenAPI 3.0 document into a tree of request/response JSON Schemas",
   "main": "lib/openapi2schema.js",
   "scripts": {
-    "test": "./node_modules/.bin/tape test/**/*.test.js | ./node_modules/.bin/tap-spec"
+    "test": "./node_modules/.bin/tape \"test/**/*.test.js\" | \"./node_modules/.bin/tap-spec\""
   },
   "bin": {
     "openapi2schema": "./index.js"
